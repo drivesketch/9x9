@@ -1,0 +1,25 @@
+.formula {
+    font-size: 48px;
+    margin-bottom: 32px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    font-size: 24px;
+    padding: 8px 16px;
+    border: 1px solid #444;
+    width: 120px;
+    text-align: center;
+    background-color: #cef
+}
+
+.wrapper {
+    width: 360px;
+    margin: 48px auto;
+}
+.buttonContainer {
+    text-align: right;
+}
