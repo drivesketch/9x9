@@ -1,25 +1,55 @@
+body {
+    font-family: "Helvetica Neue",
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+    margin: 0;
+    background-color: #fff;
+}
+header {
+    margin-top: 32px;
+    text-align: center;
+}
+h1 {
+    font-weight: normal;
+    font-size: 16px;
+}
+main {
+    width: 220px;
+    margin: 64px auto;
+    padding: 0;
+}
+
 .formula {
     font-size: 48px;
     margin-bottom: 32px;
 }
 
+
+button {
+    font-size: 16px;
+    padding: 0;
+    border: 2px solid #444;
+    color: #444;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 auto;
+    display: block;
+}
+button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
 .hidden {
     display: none;
 }
-
-button {
-    font-size: 24px;
-    padding: 8px 16px;
-    border: 1px solid #444;
-    width: 120px;
-    text-align: center;
-    background-color: #cef
-}
-
-.wrapper {
-    width: 360px;
-    margin: 48px auto;
-}
-.buttonContainer {
-    text-align: right;
+#buttonShowAnswer {
+    border-color: #0077C7;
+    color:  #0077C7;
 }

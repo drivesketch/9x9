@@ -11,7 +11,7 @@ const newQuestion = () => {
     answer = factor1 * factor2;
     spanFactor1.textContent = factor1;
     spanFactor2.textContent = factor2;
-    spanAnswer.textContent = '???';
+    spanAnswer.textContent = '??';
     buttonNewQuestion.classList.toggle('hidden');
     buttonShowAnswer.classList.toggle('hidden');
 }
