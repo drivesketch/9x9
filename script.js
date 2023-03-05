@@ -5,6 +5,11 @@ const spanAnswer = document.getElementById('answer');
 const buttonNewQuestion = document.getElementById('buttonNewQuestion');
 const buttonShowAnswer = document.getElementById('buttonShowAnswer');
 
+const toggleButtons = () => {
+    buttonNewQuestion.classList.toggle('hidden');
+    buttonShowAnswer.classList.toggle('hidden');
+}
+
 const newQuestion = () => {
     factor1 = Math.floor(Math.random() * 8) + 2 ;
     factor2 = Math.floor(Math.random() * 8) + 2 ;
@@ -12,14 +17,12 @@ const newQuestion = () => {
     spanFactor1.textContent = factor1;
     spanFactor2.textContent = factor2;
     spanAnswer.textContent = '??';
-    buttonNewQuestion.classList.toggle('hidden');
-    buttonShowAnswer.classList.toggle('hidden');
+    toggleButtons();
 }
 
 const showAnswer = () => {
     spanAnswer.textContent = answer;
-    buttonNewQuestion.classList.toggle('hidden');
-    buttonShowAnswer.classList.toggle('hidden');
+    toggleButtons();
 }
 
 window.onload = newQuestion();
