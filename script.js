@@ -23,9 +23,3 @@ const showAnswer = () => {
 }
 
 window.onload = newQuestion();
-
-// buttonShowAnswer.onclick = showAnswer();
-// buttonNewQuestion.onclick = newNumbers();
-
-
-// console.log(`${factor1} x ${factor2} = ${answer(factor1, factor2)}`);
