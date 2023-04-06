@@ -26,3 +26,11 @@ const showAnswer = () => {
 }
 
 window.onload = newQuestion();
+
+buttonNewQuestion.addEventListener('click', () => {
+    newQuestion();
+});
+
+buttonShowAnswer.addEventListener('click', () => {
+    showAnswer();
+});
