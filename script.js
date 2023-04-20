@@ -1,4 +1,4 @@
-let factor1, factor2, answer;
+let factor1, factor2;
 const spanFactor1 = document.getElementById('factor1');
 const spanFactor2 = document.getElementById('factor2');
 const spanAnswer = document.getElementById('answer');
@@ -13,7 +13,6 @@ const toggleButtons = () => {
 const newQuestion = () => {
     factor1 = Math.floor(Math.random() * 8) + 2 ;
     factor2 = Math.floor(Math.random() * 8) + 2 ;
-    answer = factor1 * factor2;
     spanFactor1.textContent = factor1;
     spanFactor2.textContent = factor2;
     spanAnswer.textContent = '??';
@@ -21,7 +20,7 @@ const newQuestion = () => {
 }
 
 const showAnswer = () => {
-    spanAnswer.textContent = answer;
+    spanAnswer.textContent = factor1 * factor2;
     toggleButtons();
 }
 
